@@ -1,6 +1,21 @@
 import React from 'react';
 
 class Product extends React.Component{
+
+  constructor(props){
+    super(props);
+
+    /*
+    * IMPORTANTE que para cada uno de nuestros métodos, los tenemos que
+    * vincular manualmente :)
+    */
+    this.handleUpVote = this.handleUpVote.bind(this);
+  }
+
+  handleUpVote(){
+    this.props.onVote(this.props.id);
+  }
+
   render(){
     return(
       <div className="item">
@@ -8,6 +23,12 @@ class Product extends React.Component{
           <img src={this.props.productImageUrl} />
         </div>
         <div className="middle aligned content" >
+          <div className="header">
+            <a onClick={this.handleUpVote}>
+              <i className="fa fa-thumbs-up" aria-hidden="true"></i>
+            </a>
+            <p>Votes: {this.props.votes}</p>
+          </div>
           <div className="description">
             <a>{this.props.title}</a>
             <p>{this.props.description}</p>
