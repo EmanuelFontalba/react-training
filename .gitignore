@@ -2,12 +2,15 @@
 
 # dependencies
 /voting_app/node_modules
+/time_tracking_app/node_modules
 
 # testing
 /voting_app/coverage
+/time_tracking_app/coverage
 
 # production
 /voting_app/build
+/time_tracking_app/build
 
 # misc
 .DS_Store
