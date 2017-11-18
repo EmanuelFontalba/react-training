@@ -86,7 +86,21 @@ label{
   color: #0000aa;
 }
 
+.green{
+  border-color: #00aa00;
+  color: #00aa00;
+}
+
 .floated{
   float: right;
   margin-left: 20px;
+}
+
+.card .content{
+  text-align: left;
+}
+
+.card .content .header{
+  font-size: 1.2em;
+  font-weight: 600;
 }

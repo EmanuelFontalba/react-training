@@ -3,15 +3,38 @@ import TimerForm from './TimerForm';
 
 
 class ToggleableTimerForm extends Component {
+  state = {
+    isOpen: false,
+  }
+
+  handleFormOpen = () => {
+    this.setState({ isOpen: true });
+  }
+
+  handleFormClose = () => {
+    this.setState({ isOpen: false });
+  }
+
+  handleFormSubmit = (timer) => {
+    this.props.onFormSubmit(timer);
+    this.setState({ isOpen: false });
+  }
+
   render() {
-    if(this.props.isOpen){
+    if(this.state.isOpen){
       return(
-        <TimerForm />
+        <TimerForm
+          onFormClose={this.handleFormClose}
+          onFormSubmit={this.handleFormSubmit}
+        />
       );
     }else{
       return(
         <div className='ui basic content center aligned segmet'>
-          <button className='ui basic button icon'>
+          <button
+            className='ui basic button icon'
+            onClick={this.handleFormOpen}
+          >
             <i className="fa fa-plus" aria-hidden="true"></i>
           </button>
         </div>
