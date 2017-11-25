@@ -8,6 +8,8 @@ const Courses = {
 };
 
 module.exports = React.createClass({
+  displayName: "CourseSelect",
+
   propTypes: {
     department: PropTypes.string,
     course: PropTypes.string,

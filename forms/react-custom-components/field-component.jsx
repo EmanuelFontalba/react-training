@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react';
 
 module.exports = React.createClass({
+  displayName: "Field",
+
   propTypes: {
     placeholder: PropTypes.string,
     name: PropTypes.string.isRequired,

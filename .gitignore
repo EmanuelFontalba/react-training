@@ -4,16 +4,19 @@
 /voting_app/node_modules
 /time_tracking_app/node_modules
 /forms/node_modules
+/webpack/node_modules
 
 # testing
 /voting_app/coverage
 /time_tracking_app/coverage
 /forms/coverage
+/webpack/coverage
 
 # production
 /voting_app/build
 /time_tracking_app/build
 /forms/build
+/webpack/build
 
 # misc
 .DS_Store

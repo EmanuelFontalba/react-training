@@ -10,7 +10,7 @@ document.body.appendChild(content);
 let apiClient;
 
 module.exports = React.createClass({
-  displayName: "Remote Persist Form",
+  displayName: "RemotePersistForm",
 
   getInitialState() {
     return {

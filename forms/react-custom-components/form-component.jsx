@@ -7,7 +7,7 @@ const content = document.createElement('div');
 document.body.appendChild(content);
 
 module.exports = React.createClass({
-  displayName: "Form component",
+  displayName: "FormComponent",
 
   getInitialState() {
     return {
@@ -56,7 +56,7 @@ module.exports = React.createClass({
     if(!person.name) return true;
     if(!person.email) return true;
     if(errMessages.length) return true;
-    
+
     return false;
   },
 

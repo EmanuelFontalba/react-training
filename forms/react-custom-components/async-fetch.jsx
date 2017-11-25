@@ -11,7 +11,7 @@ const content = document.createElement('div');
 document.body.appendChild(content);
 
 module.exports = React.createClass({
-  displayName: "Async Form",
+  displayName: "AsyncForm",
 
   getInitialState() {
     return {
