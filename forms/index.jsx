@@ -5,10 +5,11 @@ import BasicButton from './react-custom-components/basic-button.jsx';
 import BasicInput from './react-custom-components/basic-input.jsx';
 import StateInput from './react-custom-components/state-input.jsx';
 import FormComponent from './react-custom-components/form-component.jsx';
+import AsyncForm from './react-custom-components/async-fetch.jsx';
 
 const routes = [
   BasicButton, BasicInput, StateInput,
-  FormComponent,
+  FormComponent, AsyncForm,
 ];
 
 const location = window.location;
