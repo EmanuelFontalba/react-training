@@ -6,10 +6,11 @@ import BasicInput from './react-custom-components/basic-input.jsx';
 import StateInput from './react-custom-components/state-input.jsx';
 import FormComponent from './react-custom-components/form-component.jsx';
 import AsyncForm from './react-custom-components/async-fetch.jsx';
+import RemotePersist from './react-custom-components/remote-persist.jsx';
 
 const routes = [
   BasicButton, BasicInput, StateInput,
-  FormComponent, AsyncForm,
+  FormComponent, AsyncForm, RemotePersist,
 ];
 
 const location = window.location;
