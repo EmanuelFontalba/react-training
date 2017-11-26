@@ -16,7 +16,6 @@
 /voting_app/build
 /time_tracking_app/build
 /forms/build
-/webpack/build
 
 # misc
 .DS_Store
